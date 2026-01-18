@@ -31,7 +31,7 @@ const Navbar = () => {
               <li key={item.id}>
                 <Link
                   href={item.href}
-                  className={`text-background font-semibold tracking-wider font-lato p-5 hover:border-b-4 hover:border-custom-orange transition-all duration-500 border-b-4 ${
+                  className={`text-background font-semibold tracking-wider font-lato p-5 hover:border-b-4 hover:border-custom-orange transition-all duration-500 border-b-4 text-sm ${
                     path === item.href
                       ? " border-custom-orange"
                       : "border-transparent"
@@ -110,7 +110,7 @@ const Navbar = () => {
                 <li key={item.id}>
                   <Link
                     href={item.href}
-                    className={`text-background font-semibold tracking-wider font-lato p-5 hover:border-b-4 hover:border-custom-orange transition-all duration-500 border-b-4 ${
+                    className={`text-background font-semibold tracking-wider font-lato p-5 hover:border-b-4 hover:border-custom-orange transition-all duration-500 border-b-4 text-sm ${
                       path === item.href
                         ? " border-custom-orange"
                         : "border-transparent"
