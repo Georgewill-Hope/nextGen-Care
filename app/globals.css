@@ -29,13 +29,17 @@ body {
 }
 
 .container-width {
-  @apply w-full max-w-2xl lg:max-w-7xl mx-auto;
+  @apply w-full max-w-2xl lg:max-w-7xl mx-auto px-5
 }
 
 .perfectCenter {
-  @apply flex items-center justify-center;
+  @apply flex items-center justify-center
 }
 
 .items-center-between {
-  @apply flex items-center justify-between;
+  @apply flex items-center justify-between
+}
+
+.text-shadow{
+  @apply [text-shadow:0_4px_20px_rgba(0,0,0,0.6)]
 }
