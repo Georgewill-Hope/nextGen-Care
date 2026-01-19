@@ -27,8 +27,8 @@ export const metadata = {
     "orphanage, orphan support, non-profit, adoption, child education, Africa, Mauritania, Philippines",
   author: "Next Generation Care",
   siteUrl: "https://next-gen-care-hopedev.vercel.app/", // your main site URL
-  ogImage: "https://next-gen-care-hopedev.vercel.app/og-image.jpg", // Open Graph image
-  twitterImage: "https://next-gen-care-hopedev.vercel.app/twitter-image.jpg", // Twitter card image
+  ogImage: "https://next-gen-care-hopedev.vercel.app/og-image.png", // Open Graph image
+  twitterImage: "https://next-gen-care-hopedev.vercel.app/twitter-image.png", // Twitter card image
   twitterHandle: "@Hopedev_",
 };
 
