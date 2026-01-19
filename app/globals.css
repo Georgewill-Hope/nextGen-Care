@@ -41,5 +41,6 @@ body {
 }
 
 .text-shadow{
-  @apply [text-shadow:0_4px_20px_rgba(0,0,0,0.6)]
+  /* @apply [text-shadow:0_4px_20px_rgba(255, 102, 0, 0.6)] */
+  
 }

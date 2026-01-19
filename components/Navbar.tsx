@@ -16,7 +16,7 @@ const Navbar = () => {
   const path = usePathname();
   const [openNav, setOpenNav] = useState(false);
   return (
-    <nav className="lg:bg-black/20 lg:backdrop-blur-lg fixed left-0 right-0 z-50 top-0 lg:px-5">
+    <nav className="lg:bg-black/30 fixed left-0 right-0 z-50 top-0 lg:px-5">
       {/* Desktop and large device navbar */}
 
       <div className="hidden lg:flex">
