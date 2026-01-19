@@ -13,19 +13,27 @@ const StructureCard: React.FC<CardProps> = ({
 }) => {
   return (
     <div className="perfectCenter flex-col sm:flex-row gap-4 sm:gap-6 md:gap-10 xl:gap-20 sm:even:flex-row-reverse w-full">
+      {/* Image Container */}
       <div className="relative w-full h-96 sm:h-80 overflow-hidden sm:flex-1">
+        {/* Card Image */}
         <Image
           src={image}
           alt="card-image"
           fill
           className="object-cover object-center"
         />
+        {/* Overlay */}
         <div className="absolute top-0 bottom-0 left-0 right-0 bg-black/20" />
       </div>
+
+      {/* Card Content */}
       <div className="sm:flex-1">
+        {/* Card description */}
         <p className="mb-7 text-gray-900 font-bold tracking-widest text-sm xl:text-lg">
           {desc}
         </p>
+
+        {/* Card Button */}
         <Button title={title} href={href} />
       </div>
     </div>

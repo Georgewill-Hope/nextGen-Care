@@ -4,9 +4,12 @@ import Button from "./Button";
 const Estimate = () => {
   return (
     <section className="container-width perfectCenter flex-col gap-5 py-20">
+      {/* Content Header */}
       <h2 className="text-2xl sm:text-4xl text-center mb-5 sm:mb-10 border-b border-custom-orange pb-2">
         Daily, over 700 children are forced into life as orphans.
       </h2>
+
+      {/* Content Description */}
       <div className="perfectCenter flex-col gap-5 sm:text-center sm:tracking-wider mb-5 sm:mb-10 md:leading-8 font-lato">
         <p>
           Next Gen Care is a global non-profit organization dedicated to
@@ -25,6 +28,7 @@ const Estimate = () => {
         <p>Help us donate to orphans and improve their living situations.</p>
       </div>
 
+      {/* CTA Button */}
       <Button title="Read More" href="#&" />
     </section>
   );
