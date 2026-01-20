@@ -16,7 +16,7 @@ const Navbar = () => {
   const path = usePathname();
   const [openNav, setOpenNav] = useState(false);
   return (
-    <nav className="lg:bg-black/30 fixed left-0 right-0 z-50 top-0 lg:px-5">
+    <nav className="lg:bg-black/30 lg:backdrop-blur-lg fixed left-0 right-0 z-50 top-0 lg:px-5">
       {/* Desktop and large device navbar */}
 
       <div className="hidden lg:flex">
@@ -66,7 +66,11 @@ const Navbar = () => {
                 className="text-background/70 hover:text-background transition-colors duration-500 ease-in-out"
               />
             </a>
-            <a href="http://" target="_blank" rel="noopener noreferrer">
+            <a
+              href="https://x.com/Hopedev_"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
               <FaYoutube
                 size={30}
                 className="text-background/70 hover:text-background transition-colors duration-500 ease-in-out"
@@ -138,7 +142,11 @@ const Navbar = () => {
               >
                 <BsTwitterX size={22} />
               </a>
-              <a href="http://" target="_blank" rel="noopener noreferrer">
+              <a
+                href="https://x.com/Hopedev_"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
                 <AiOutlineYoutube size={30} />
               </a>
             </div>

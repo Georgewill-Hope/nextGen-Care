@@ -5,7 +5,7 @@ import bg from "@/public/assets/pexels-cottonbro-3662648.jpg";
 
 const Hero = () => {
   return (
-    <section className="relative h-screen max-h-200 md:max-h-[80vh] w-full">
+    <section className="relative h-screen max-h-150 lg:max-h-[80vh] w-full">
       {/* Hero Image */}
       <Image
         src={bg}

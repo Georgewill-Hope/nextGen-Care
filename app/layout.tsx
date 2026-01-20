@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { Geist, Geist_Mono, Lato } from "next/font/google";
 import "./globals.css";
 import Navbar from "@/components/Navbar";
+import Footer from "@/components/Footer";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -19,10 +20,9 @@ const lataMono = Lato({
 });
 
 export const metadata: Metadata = {
-  title:
-    "Home | Next Generation Care | Orphanage in Mauritania | Philippines | Africa",
+  title: "Home | Next Generation Care",
   description:
-    "We offer orphanages, adoption centers, and child learning services to parentless children in the Philippines, Africa and Mauritania.",
+    "We offer orphanages, adoption centers, and child learning services to parentless children.",
   keywords: [
     "orphanage",
     "orphan support",
@@ -33,6 +33,22 @@ export const metadata: Metadata = {
     "Mauritania",
     "Philippines",
   ],
+  openGraph: {
+    title: "Home | Next Generation Care",
+    description:
+      "We offer orphanages, adoption centers, and child learning services to parentless children.",
+    siteName: "https://next-gen-care-hopedev.vercel.app",
+    locale: "en_US",
+    images: ["https://next-gen-care-hopedev.vercel.app/opengraph-image.jpg"],
+  },
+  twitter: {
+    title: "Home | Next Generation Care",
+    description:
+      "We offer orphanages, adoption centers, and child learning services to parentless children.",
+    card: "summary_large_image",
+    images: ["https://next-gen-care-hopedev.vercel.app/opengraph-image.jpg"],
+    creator: "@Hopedev_",
+  },
   authors: [{ name: "Next Generation Care" }],
 };
 
@@ -48,6 +64,7 @@ export default function RootLayout({
       >
         <Navbar />
         <main>{children}</main>
+        <Footer />
       </body>
     </html>
   );

@@ -1,5 +1,7 @@
 import { CardProps, navigationLinks } from "./_types";
-import missionImage from "@/public/assets/children.jpg";
+import visionImage from "@/public/assets/children.jpg";
+import missionImage from "@/public/assets/children-legs.jpg";
+import inspirationImage from "@/public/assets/inspired.jpg";
 
 export const navigationData: navigationLinks[] = [
   {
@@ -37,9 +39,9 @@ export const navigationData: navigationLinks[] = [
 export const structures: CardProps[] = [
   {
     id: 1,
-    title: "Our Vission",
+    title: "Our Vision",
     desc: '"A world where every orphaned child has a safe home, loving care, and the opportunity to thrive."',
-    image: missionImage,
+    image: visionImage,
     href: "#&",
   },
   {
@@ -53,7 +55,7 @@ export const structures: CardProps[] = [
     id: 3,
     title: "Our Inspiration",
     desc: '"Every child deserves a chance to shine."',
-    image: missionImage,
+    image: inspirationImage,
     href: "#&",
   },
 ];
