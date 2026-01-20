@@ -111,7 +111,7 @@ const Navbar = () => {
             {/* nav links */}
             <ul className="perfectCenter flex-col gap-10 py-10 mb-10">
               {navigationData.map((item) => (
-                <li key={item.id}>
+                <li key={item.id} onClick={() => setOpenNav(!openNav)}>
                   <Link
                     href={item.href}
                     className={`font-semibold tracking-wider font-lato p-5 hover:border-b-4 hover:border-custom-orange transition-all duration-500 border-b-4 text-sm ${
@@ -132,6 +132,7 @@ const Navbar = () => {
                 href="https://www.facebook.com/share/1Bu31bWk4E/"
                 target="_blank"
                 rel="noopener noreferrer"
+                onClick={() => setOpenNav(!openNav)}
               >
                 <FaFacebook size={25} />
               </a>
@@ -139,6 +140,7 @@ const Navbar = () => {
                 href="https://x.com/Hopedev_"
                 target="_blank"
                 rel="noopener noreferrer"
+                onClick={() => setOpenNav(!openNav)}
               >
                 <BsTwitterX size={22} />
               </a>
@@ -146,6 +148,7 @@ const Navbar = () => {
                 href="https://x.com/Hopedev_"
                 target="_blank"
                 rel="noopener noreferrer"
+                onClick={() => setOpenNav(!openNav)}
               >
                 <AiOutlineYoutube size={30} />
               </a>
