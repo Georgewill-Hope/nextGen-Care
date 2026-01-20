@@ -106,7 +106,7 @@ const about = () => {
         />
         <div className="absolute top-0 bottom-0 left-0 right-0 opacity-0 group-hover:opacity-0 sm:opacity-50 z-10 bg-linear-180 from-gray-200 via-gray-900 to-black transition-opacity ease-in-out duration-500" />
         <div className="absolute top-0 bottom-0 left-0 right-0 perfectCenter bg-black/30 z-20">
-          <h4 className="text-5xl sm:text-7xl font-mono text-white font-extrabold text-shadow group-hover:opacity-0 transition-all ease-in-out duration-500 self-end md:self-center">
+          <h4 className="text-5xl sm:text-7xl font-mono text-white font-extrabold text-shadow group-hover:translate-y-56 transition-all ease-in-out duration-500 self-end md:self-center">
             OUR TEAM
           </h4>
         </div>
