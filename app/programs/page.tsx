@@ -1,4 +1,6 @@
+import Help from "@/components/Help";
 import Hero from "@/components/Hero";
+import Impact from "@/components/Impact";
 import bg from "@/public/assets/hossen.jpg";
 
 const programs = () => {
@@ -12,6 +14,8 @@ const programs = () => {
           </h1>
         </div>
       </Hero>
+      <Impact />
+      <Help />
     </div>
   );
 };
