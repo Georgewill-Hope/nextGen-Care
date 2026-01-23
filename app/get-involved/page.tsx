@@ -3,16 +3,9 @@ import Estimate from "@/components/Estimate";
 import GetInvolved from "@/components/GetInvolved";
 import Help from "@/components/Help";
 import Hero from "@/components/Hero";
-import bg from "@/public/assets/pexels-safari-consoler-3290243-14456845.jpg";
-import Image from "next/image";
-import { FaMoneyCheckAlt } from "react-icons/fa";
+import bg from "@/public/assets/child-4907685_1920.jpg";
 import { GiPayMoney, GiReceiveMoney, GiTakeMyMoney } from "react-icons/gi";
 import { MdVolunteerActivism } from "react-icons/md";
-import {
-  RiMoneyCnyBoxFill,
-  RiMoneyDollarBoxFill,
-  RiMoneyPoundCircleFill,
-} from "react-icons/ri";
 
 const getInvolved = () => {
   return (
