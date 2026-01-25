@@ -126,4 +126,17 @@ export const ProgramsData: CardProps[] = [
     image: inspirationImage,
     href: "#&",
   },
+  {
+    id: 6,
+    title: "Orphan Sponsorship Programs",
+    desc: "These connect donors directly to children’s care.",
+    list: [
+      "Monthly financial sponsorship",
+      "Education and health coverage",
+      "Donor-child communication updates",
+      "Long-term development support",
+    ],
+    image: inspirationImage,
+    href: "#&",
+  },
 ];
