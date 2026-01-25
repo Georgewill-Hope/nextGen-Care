@@ -12,4 +12,5 @@ export interface CardProps {
   desc: string;
   href: string;
   title: string;
+  list?: string[];
 }
