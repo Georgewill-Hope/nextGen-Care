@@ -2,14 +2,14 @@ import { CardProps } from "@/utils/_types";
 import Image from "next/image";
 import React from "react";
 import Button from "./Button";
-import { structures } from "@/utils/_data";
 
 const StructureCard: React.FC<CardProps> = ({
   image,
   desc,
   href,
   title,
-  id,
+  list,
+  btnTitle,
 }) => {
   return (
     <div className="perfectCenter flex-col sm:flex-row gap-4 sm:gap-6 md:gap-10 xl:gap-20 sm:even:flex-row-reverse w-full">
@@ -29,18 +29,29 @@ const StructureCard: React.FC<CardProps> = ({
       {/* Card Content */}
       <div className="sm:flex-1">
         {/* Card description */}
-        <p className="mb-7 text-gray-900 font-bold tracking-widest text-sm xl:text-lg">
-          {desc}
-        </p>
+        <h4 className="text-gray-900 font-bold tracking-widest text-sm xl:text-lg mb-1 font-mono">
+          {title}
+        </h4>
+        <p className="font-lato tracking-wider mb-4">{desc}</p>
+
+        {list && (
+          <ul className="px-8 font-lato tracking-wider leading-8">
+            {list?.map((item, i) => (
+              <li key={i} className="list-disc">
+                {item}
+              </li>
+            ))}
+          </ul>
+        )}
 
         {/* Card Button */}
-        <Button title={title} href={href} />
+        {btnTitle && href && <Button title={btnTitle} href={href} />}
       </div>
     </div>
   );
 };
 
-const Structure = () => {
+const Structure = ({ structures }: { structures: CardProps[] }) => {
   return (
     <section className="bg-gray-100 py-20 lg:py-28">
       <div className="container-width flex flex-col gap-20">

@@ -10,7 +10,8 @@ export interface CardProps {
   id: number;
   image: StaticImageData;
   desc: string;
-  href: string;
-  title: string;
+  href?: string;
+  title?: string;
   list?: string[];
+  btnTitle?: string;
 }

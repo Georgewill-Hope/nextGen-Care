@@ -39,24 +39,44 @@ export const navigationData: navigationLinks[] = [
 export const structures: CardProps[] = [
   {
     id: 1,
-    title: "Our Vision",
+    btnTitle: "Our Vision",
     desc: '"A world where every orphaned child has a safe home, loving care, and the opportunity to thrive."',
     image: visionImage,
     href: "#&",
   },
   {
     id: 2,
-    title: "Our Mission",
+    btnTitle: "Our Mission",
     desc: '"We empower orphaned and abandoned children by providing safe housing, quality education, healthcare, and adoption support—guiding them toward brighter, self-sufficient futures."',
     image: missionImage,
     href: "#&",
   },
   {
     id: 3,
-    title: "Our Inspiration",
+    btnTitle: "Our Inspiration",
     desc: '"Every child deserves a chance to shine."',
     image: inspirationImage,
     href: "#&",
+  },
+];
+export const projectData: CardProps[] = [
+  {
+    id: 1,
+    title: "Basic Healthcare & Clinic Visit Project",
+    desc: "Covers routine medical checkups, treatment of common illnesses, and emergency hospital visits through partnerships with local clinics.",
+    image: visionImage,
+  },
+  {
+    id: 2,
+    title: "Vegetable Garden & Poultry Rearing Project",
+    desc: "Children and caregivers cultivate vegetables such as okra, spinach, pepper, and tomatoes within the orphanage compound to reduce food costs and teach farming skills. Raising chickens for eggs and meat to supplement meals and generate small income for orphanage upkeep.",
+    image: missionImage,
+  },
+  {
+    id: 3,
+    title: "Uniforms & School Supplies Project",
+    desc: "Supplies children with school uniforms, shoes, bags, books, and writing materials at the beginning of each academic term.",
+    image: inspirationImage,
   },
 ];
 

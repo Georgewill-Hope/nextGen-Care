@@ -5,6 +5,7 @@ import Hero from "@/components/Hero";
 import Impact from "@/components/Impact";
 import Structure from "@/components/Structure";
 import bg from "@/public/assets/pexels-cottonbro-3662648.jpg";
+import { structures } from "@/utils/_data";
 
 export default function Home() {
   return (
@@ -48,7 +49,7 @@ export default function Home() {
         <p>Help us donate to orphans and improve their living situations.</p>
         <p>Help us donate to orphans and improve their living situations.</p>
       </Estimate>
-      <Structure />
+      <Structure structures={structures}/>
       <Impact />
       <Help />
     </div>
