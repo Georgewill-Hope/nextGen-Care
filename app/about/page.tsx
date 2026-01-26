@@ -6,6 +6,7 @@ import Structure from "@/components/Structure";
 import bg from "@/public/assets/pexels-safari-consoler-3290243-14456845.jpg";
 import Image from "next/image";
 import miracleTeam from "@/public/assets/MiracleTeam.jpg";
+import { structures } from "@/utils/_data";
 
 const about = () => {
   return (
@@ -139,7 +140,7 @@ const about = () => {
           <Button title="Donate" href="#&" />
         </div>
       </Estimate>
-      <Structure />
+      <Structure structures={structures}/>
       <Impact />
     </div>
   );
