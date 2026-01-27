@@ -1,9 +1,9 @@
 import Button from "@/components/Button";
-import Estimate from "@/components/Estimate";
+import CardContainer from "@/components/CardContainer";
+import CustomSection from "@/components/CustomSection";
 import Help from "@/components/Help";
 import Hero from "@/components/Hero";
 import Impact from "@/components/Impact";
-import Structure from "@/components/Structure";
 import bg from "@/public/assets/pexels-cottonbro-3662648.jpg";
 import { structures } from "@/utils/_data";
 
@@ -27,7 +27,7 @@ export default function Home() {
           <Button title="Donate Now" href="#&" />
         </div>
       </Hero>
-      <Estimate
+      <CustomSection
         title="Daily, over 700 children are forced into life as orphans."
         titleStyles="border-b border-custom-orange text-center"
         childrenStyles="sm:text-center"
@@ -48,8 +48,8 @@ export default function Home() {
         </p>
         <p>Help us donate to orphans and improve their living situations.</p>
         <p>Help us donate to orphans and improve their living situations.</p>
-      </Estimate>
-      <Structure structures={structures}/>
+      </CustomSection>
+      <CardContainer data={structures} />
       <Impact />
       <Help />
     </div>

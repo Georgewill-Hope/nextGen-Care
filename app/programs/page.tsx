@@ -1,8 +1,9 @@
 import Help from "@/components/Help";
 import Hero from "@/components/Hero";
 import Impact from "@/components/Impact";
-import Programs from "@/components/Programs";
-import bg from "@/public/assets/hossen.jpg";
+import CardContainer from "@/components/CardContainer";
+import bg from "@/public/assets/program.jpg";
+import { ProgramsData } from "@/utils/_data";
 
 const programs = () => {
   return (
@@ -15,7 +16,7 @@ const programs = () => {
           </h1>
         </div>
       </Hero>
-      <Programs />
+      <CardContainer data={ProgramsData}/>
       <Impact />
       <Help />
     </div>

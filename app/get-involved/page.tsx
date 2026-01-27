@@ -1,5 +1,5 @@
 import Button from "@/components/Button";
-import Estimate from "@/components/Estimate";
+import CustomSection from "@/components/CustomSection";
 import GetInvolved from "@/components/GetInvolved";
 import Help from "@/components/Help";
 import Hero from "@/components/Hero";
@@ -25,7 +25,7 @@ const getInvolved = () => {
         </div>
       </Hero>
 
-      <Estimate
+      <CustomSection
         title="“It takes a Society to raise a child”"
         titleStyles="text-start self-start border-b border-custom-orange"
       >
@@ -44,9 +44,9 @@ const getInvolved = () => {
           But we can&apos;t possibly do this without you. Your tiniest support
           can go a long way to making their big dreams come true.
         </p>
-      </Estimate>
+      </CustomSection>
       <GetInvolved />
-      <Estimate title="Our promise" titleStyles="border-b border-custom-orange">
+      <CustomSection title="Our promise" titleStyles="border-b border-custom-orange">
         <p className="text-center font-lato">
           We assure you that all your donations will reach these children and be
           invested in their future.
@@ -91,7 +91,7 @@ const getInvolved = () => {
         <div className="mt-14">
           <Button title="Donate Now" href="&#" />
         </div>
-      </Estimate>
+      </CustomSection>
       <Help />
     </div>
   );

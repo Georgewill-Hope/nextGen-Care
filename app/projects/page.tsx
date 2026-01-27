@@ -1,8 +1,8 @@
+import CardContainer from '@/components/CardContainer';
 import Help from '@/components/Help';
 import Hero from '@/components/Hero';
 import Impact from '@/components/Impact';
-import Structure from '@/components/Structure';
-import bg from "@/public/assets/hossen.jpg";
+import bg from "@/public/assets/project.jpg";
 import { projectData } from '@/utils/_data';
 
 const projects = () => {
@@ -16,7 +16,7 @@ const projects = () => {
           </h1>
         </div>
       </Hero>
-      <Structure structures={projectData} />
+      <CardContainer data={projectData}/>
       <Impact />
       <Help />
     </div>

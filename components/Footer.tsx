@@ -13,6 +13,8 @@ const Footer = () => {
           </p>
         </div>
         <div className="w-full z-20">
+
+          {/* description */}
           <div className="mb-9">
             <h5 className="text-4xl lg:text-5xl font-extrabold font-mono text-gray-100 mb-2 leading-14">
               Be the Reason a Child&apos;s Life Is <br /> Transformed Today
@@ -22,11 +24,16 @@ const Footer = () => {
             </p>
           </div>
 
+
+          {/* CTA button */}
           <Button title="Join Now" href="#&" />
         </div>
 
+        {/* line breaker */}
         <div className="w-full h-0.5 bg-white rounded-full z-20" />
 
+
+        {/* footer links */}
         <div className="w-full flex flex-col flex-wrap gap-5 sm:flex-row sm:items-center justify-between z-20">
           <ul className="flex items-center flex-wrap gap-5 sm:gap-10">
             {navigationData.map((item) => (

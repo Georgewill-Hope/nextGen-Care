@@ -2,6 +2,16 @@ import { CardProps, navigationLinks } from "./_types";
 import visionImage from "@/public/assets/children.jpg";
 import missionImage from "@/public/assets/children-legs.jpg";
 import inspirationImage from "@/public/assets/inspired.jpg";
+import health from "@/public/assets/health.jpg";
+import farm from "@/public/assets/farm.jpg";
+import uniform from "@/public/assets/uniform.jpg";
+import nutrition from "@/public/assets/nutrition.jpg";
+import resident from "@/public/assets/resident.jpg";
+import skill from "@/public/assets/skill.jpg";
+import education from "@/public/assets/education.jpg";
+import sponsorship from "@/public/assets/sponsorship.jpg";
+import protection from "@/public/assets/protection.jpg";
+
 
 export const navigationData: navigationLinks[] = [
   {
@@ -64,19 +74,19 @@ export const projectData: CardProps[] = [
     id: 1,
     title: "Basic Healthcare & Clinic Visit Project",
     desc: "Covers routine medical checkups, treatment of common illnesses, and emergency hospital visits through partnerships with local clinics.",
-    image: visionImage,
+    image: health,
   },
   {
     id: 2,
     title: "Vegetable Garden & Poultry Rearing Project",
     desc: "Children and caregivers cultivate vegetables such as okra, spinach, pepper, and tomatoes within the orphanage compound to reduce food costs and teach farming skills. Raising chickens for eggs and meat to supplement meals and generate small income for orphanage upkeep.",
-    image: missionImage,
+    image: farm,
   },
   {
     id: 3,
     title: "Uniforms & School Supplies Project",
     desc: "Supplies children with school uniforms, shoes, bags, books, and writing materials at the beginning of each academic term.",
-    image: inspirationImage,
+    image: uniform,
   },
 ];
 
@@ -91,7 +101,7 @@ export const ProgramsData: CardProps[] = [
       "Clothing and basic necessities",
       "Supervision and caregiving",
     ],
-    image: visionImage,
+    image: resident,
     href: "#&",
   },
   {
@@ -104,7 +114,7 @@ export const ProgramsData: CardProps[] = [
       "After-school tutoring and homework support",
       "Scholarships for secondary and tertiary education",
     ],
-    image: missionImage,
+    image: education,
     href: "#&",
   },
   {
@@ -117,7 +127,7 @@ export const ProgramsData: CardProps[] = [
       "Mental health and trauma counseling",
       "Balanced meals and nutrition monitoring",
     ],
-    image: inspirationImage,
+    image: nutrition,
     href: "#&",
   },
   {
@@ -130,7 +140,7 @@ export const ProgramsData: CardProps[] = [
       "Legal support and child protection reporting",
       "Gender-based violence prevention",
     ],
-    image: inspirationImage,
+    image: protection,
     href: "#&",
   },
   {
@@ -143,7 +153,7 @@ export const ProgramsData: CardProps[] = [
       "Financial literacy and savings programs",
       "Career guidance",
     ],
-    image: inspirationImage,
+    image: skill,
     href: "#&",
   },
   {
@@ -156,7 +166,7 @@ export const ProgramsData: CardProps[] = [
       "Donor-child communication updates",
       "Long-term development support",
     ],
-    image: inspirationImage,
+    image: sponsorship,
     href: "#&",
   },
 ];

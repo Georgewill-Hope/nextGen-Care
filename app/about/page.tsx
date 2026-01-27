@@ -1,12 +1,12 @@
 import Button from "@/components/Button";
-import Estimate from "@/components/Estimate";
+import CustomSection from "@/components/CustomSection";
 import Hero from "@/components/Hero";
 import Impact from "@/components/Impact";
-import Structure from "@/components/Structure";
-import bg from "@/public/assets/pexels-safari-consoler-3290243-14456845.jpg";
+import bg from "@/public/assets/directors.jpg";
 import Image from "next/image";
 import miracleTeam from "@/public/assets/MiracleTeam.jpg";
 import { structures } from "@/utils/_data";
+import CardContainer from "@/components/CardContainer";
 
 const about = () => {
   return (
@@ -24,7 +24,7 @@ const about = () => {
           </h1>
         </div>
       </Hero>
-      <Estimate
+      <CustomSection
         title="The Story Behind Next Generation Care"
         titleStyles="text-start self-start border-b border-custom-orange"
       >
@@ -94,7 +94,7 @@ const about = () => {
           should be shaped by neglect. <br /> By caring for Mauritania&apos;s
           children today, we are shaping a stronger, brighter tomorrow.
         </p>
-      </Estimate>
+      </CustomSection>
 
       {/* Our Team */}
       <div className="relative container-width h-72 sm:h-150 overflow-hidden group bg-black">
@@ -112,7 +112,7 @@ const about = () => {
           </h4>
         </div>
       </div>
-      <Estimate title="Who We Are?" titleStyles="text-start self-start">
+      <CustomSection title="Who We Are?" titleStyles="text-start self-start">
         <p>
           Next Gen Care is an international organization that works with
           orphanage and foster care systems. We operate in India, Africa, and
@@ -139,8 +139,8 @@ const about = () => {
         <div className="self-start mt-5">
           <Button title="Donate" href="#&" />
         </div>
-      </Estimate>
-      <Structure structures={structures}/>
+      </CustomSection>
+      <CardContainer data={structures} />
       <Impact />
     </div>
   );

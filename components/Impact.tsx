@@ -1,12 +1,6 @@
-import React from "react";
-import { FaHome, FaPeopleCarry } from "react-icons/fa";
-import { FaPeopleGroup } from "react-icons/fa6";
-import { HiHomeModern } from "react-icons/hi2";
+import { FaPeopleCarry } from "react-icons/fa";
 import { IoIosPeople } from "react-icons/io";
 import { IoPeopleSharp } from "react-icons/io5";
-import { MdPeople } from "react-icons/md";
-import { RiHomeHeartFill } from "react-icons/ri";
-import { SiHomeassistant } from "react-icons/si";
 
 const Impact = () => {
   return (
