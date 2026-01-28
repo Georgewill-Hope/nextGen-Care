@@ -4,8 +4,42 @@ import GetInvolved from "@/components/GetInvolved";
 import Help from "@/components/Help";
 import Hero from "@/components/Hero";
 import bg from "@/public/assets/child-4907685_1920.jpg";
+import { Metadata } from "next";
 import { GiPayMoney, GiReceiveMoney, GiTakeMyMoney } from "react-icons/gi";
 import { MdVolunteerActivism } from "react-icons/md";
+
+export const metadata: Metadata = {
+  title: "Get Invovled | Next Generation Care",
+  description: "Get Involved Next Generation care",
+  keywords: [
+    "orphanage",
+    "orphan support",
+    "non-profit",
+    "orphan",
+    "Next Gen Care",
+    "Next Generation Care",
+    "adoption",
+    "child education",
+    "Africa",
+    "Mauritania",
+    "Philippines",
+  ],
+  openGraph: {
+    title: "Get Invovled | Next Generation Care",
+    description: "Get Involved Next Generation care",
+    siteName: "https://next-gen-care-hopedev.vercel.app",
+    locale: "en_US",
+    images: ["https://next-gen-care-hopedev.vercel.app/opengraph-image.jpg"],
+  },
+  twitter: {
+    title: "Get Invovled | Next Generation Care",
+    description: "Get Involved Next Generation care",
+    card: "summary_large_image",
+    images: ["https://next-gen-care-hopedev.vercel.app/opengraph-image.jpg"],
+    creator: "@Hopedev_",
+  },
+  authors: [{ name: "Next Generation Care" }],
+};
 
 const getInvolved = () => {
   return (

@@ -4,6 +4,42 @@ import Impact from "@/components/Impact";
 import CardContainer from "@/components/CardContainer";
 import bg from "@/public/assets/program.jpg";
 import { ProgramsData } from "@/utils/_data";
+import { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "Programs | Next Generation Care",
+  description: "Next Generation care Programs",
+  keywords: [
+    "orphanage",
+    "orphan support",
+    "orphan programs",
+    "non-profit",
+    "orphan",
+    "Next Gen Care",
+    "Next Generation Care",
+    "Next Generation Care Programs",
+    "adoption",
+    "child education",
+    "Africa",
+    "Mauritania",
+    "Philippines",
+  ],
+  openGraph: {
+    title: "Programs | Next Generation Care",
+    description: "Next Generation care Programs",
+    siteName: "https://next-gen-care-hopedev.vercel.app",
+    locale: "en_US",
+    images: ["https://next-gen-care-hopedev.vercel.app/opengraph-image.jpg"],
+  },
+  twitter: {
+    title: "Programs | Next Generation Care",
+    description: "Next Generation care Programs",
+    card: "summary_large_image",
+    images: ["https://next-gen-care-hopedev.vercel.app/opengraph-image.jpg"],
+    creator: "@Hopedev_",
+  },
+  authors: [{ name: "Next Generation Care" }],
+};
 
 const programs = () => {
   return (

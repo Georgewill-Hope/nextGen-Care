@@ -7,6 +7,40 @@ import Image from "next/image";
 import miracleTeam from "@/public/assets/MiracleTeam.jpg";
 import { structures } from "@/utils/_data";
 import CardContainer from "@/components/CardContainer";
+import { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "About | Next Generation Care",
+  description: "About Next Generation care for Orphans",
+  keywords: [
+    "orphanage",
+    "orphan support",
+    "non-profit",
+    "orphan",
+    "Next Gen Care",
+    "Next Generation Care",
+    "adoption",
+    "child education",
+    "Africa",
+    "Mauritania",
+    "Philippines",
+  ],
+  openGraph: {
+    title: "About | Next Generation Care",
+    description: "About Next Generation care for Orphans ",
+    siteName: "https://next-gen-care-hopedev.vercel.app",
+    locale: "en_US",
+    images: ["https://next-gen-care-hopedev.vercel.app/opengraph-image.jpg"],
+  },
+  twitter: {
+    title: "About | Next Generation Care",
+    description: "About Next Generation care for Orphans ",
+    card: "summary_large_image",
+    images: ["https://next-gen-care-hopedev.vercel.app/opengraph-image.jpg"],
+    creator: "@Hopedev_",
+  },
+  authors: [{ name: "Next Generation Care" }],
+};
 
 const about = () => {
   return (
