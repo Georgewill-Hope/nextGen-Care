@@ -33,11 +33,11 @@ const Card: React.FC<CardProps> = ({
         </h4>
 
         {/* Card description */}
-        <p className="font-lato tracking-wider mb-4">{desc}</p>
+        <p className="font-lato tracking-wider mb-4 text-gray-800">{desc}</p>
 
         {/* card list */}
         {list && (
-          <ul className="px-8 font-lato tracking-wider leading-8">
+          <ul className="px-8 font-lato tracking-wider leading-8 text-gray-700">
             {list?.map((item, i) => (
               <li key={i} className="list-disc">
                 {item}
